@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Studio yellow.</title>
+  </head>
+  <body>
+
+    <div class="content_cover">
+      <div class="carousel slide" id="myCarousel" data-rage="carousel">
+      <div class="about_us_img">
+        <img src="img/aboutus.png" alt="owners of studio yellow">
+        <div class="birgitta_info" id="infoBirgitta" >
+          <i class="fa fa-arrow-right"></i>
+          <span class="who_dis" id="slide_birgitta" data-target="#myCarousel" data-slide-to="0">hver er þetta?</span>
+        </div>
+        <div class="hugrun_info" onclick="whodisFunction()">
+          <i class="fa fa-arrow-right"></i>
+          <span class="who_dis" id="slide_hugrun" data-target="#myCarousel" data-slide-to="2">hver er þetta?</span>
+        </div>
+      </div>
+
+      <div class="about_us_container">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li id="slide_birgitta" data-target="#myCarousel" data-slide-to="0"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+          <li id="slide_hugrun" data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+          <div class="carousel-inner">
+            <!-- indicators sjást hér  -->
+
+            <div class="item">
+              <img class="profile_img"src="img/birgitta_studioyellow.jpg" alt="">
+              <div class="text_content">
+                <h3>Birgitta Rún Sveinbjörnsdóttir</h3>
+                <p>Þetta er Birgitta, hinn eigandi Studio yellow. Hún er nemi við vefþróun og viðmótshönnun í Vefskólanum. Hún lærði grafíska hönnun í Kosta Ríka og er einnig með BA gráðu í félags- og markaðsfræði frá Háskóla Íslands. Birgitta hefur unnið sem umbrotsmaður hjá Fréttablaðinu seinustu þrjú ár og tekur að sér að hanna öðruvísi ferilskrár fyrir fólk í atvinnuleit undir nafninu Bold CV. Birgitta er með ótrúlega smitandi hlátur en þolir ekki Comic Sans . Það er mjög auðvelt að bregða henni, prófaðu að segja “BÚ” þegar þú sérð hana næst, það er ógeðslega fyndið! </p>
+                <i class="fab fa-instagram"></i><a href="https://www.instagram.com/birgittarun92/"class="socialmedia">birgittarun92</a><br>
+                <i class="fas fa-at"></i><p class="socialmedia">birgitta@studioyellow.is</p>
+              </div>
+            </div>
+
+            <div class="item active">
+              <img class="logo_img"src="img/logo_studioyellow.png" alt="">
+              <div class="text_content">
+                <h3>Studio yellow.</h3>
+                <p>Studio yellow er ný vefstofa sem stofnuð var haustið 2018. Bakvið vefstofuna standa tvær ungar konur sem ákváðu að stökkva beint út í djúpu laugina eftir fyrsta árið sitt í Vefskólanum. Studio yellow kemur með ferskar hugmyndir inn á markaðinn, leggur mikið upp úr persónulegri þjónustu og sýnir mikinn metnað í því að hjálpa eintaklingum og litlum fyrirtækjum að blómstra á internetinu.<br>
+                Studio yellow sérhæfir sig í vefhönnun og framendaforritun. Einnig tekur það að sér alls kyns önnur verkefni á borð við notendaprófanir, þarfagreiningar og annað markaðsefni.</p>
+                <i class="fab fa-instagram"></i>
+                <a href="https://www.instagram.com/hello.studioyellow/"class="socialmedia">hello.studioyellow</a><br>
+                <i class="fab fa-facebook-f"></i>
+                <a href="https://www.facebook.com/hello.studioyellow/" class="socialmedia">hello.studioyellow</a><br>
+                <i class="fas fa-at"></i>
+                <p class="socialmedia">hello@studioyellow.is</p><br>
+                <i class="fas fa-phone"></i>
+                <p class="socialmedia">844 0124</p>
+
+              </div>
+            </div>
+
+            <div class="item">
+              <img class="profile_img"src="img/hugrun_studioyellow.jpg" alt="">
+              <div class="text_content">
+                <h3>Hugrún Rúnarsdóttir</h3>
+                <p>Þetta er Hugrún, annar eigandi Studio Yellow. Hún er nemi í vefþróun og viðmótshönnun í Vefskólanum. Hún er einnig grafískur miðlari að mennt ásamt því að vera með titilinn förðunarfræðingur. Hún er rosalegur snyrtipinni, þrífur allan liðlangan daginn og stundar ólympískar lyfingar inn á milli. Hugrún er með rándýran tanngarð enda tekur hún tannburstann með sér hvert sem hún fer.</p>
+                <i class="fab fa-instagram"></i><a href="https://www.instagram.com/hugrunrunars/" class="socialmedia">hugrunrunars</a><br>
+                <i class="fas fa-at"></i><p class="socialmedia">hugrun@studioyellow.is</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation_box">
+        <a href="index.html" class="">forsíða</a><p>/ studio yellow</p>
+      </div>
+
+      <div class="menu_buttons">
+        <button class="project_button" type="button" name="button"><a href="projects.html">verkefni</a></button>
+        <button class="us_button" type="button" name="button"><a href="about_us.html">studio yellow</a></button>
+      </div>
+
+    </div>
+
+  </body>
+</html>

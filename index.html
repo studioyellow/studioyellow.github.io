@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Studio yellow.</title>
+  </head>
+  <body>
+
+    <div class="video_container">
+      <div class="overlay"></div>
+      <div>
+        <video autoplay muted loop id="video" class="video"
+          src="video/yellow_video_2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="content_cover">
+      <!-- play og pause takkinn -->
+      <div  class="playpause" onClick="pauseFunction()">
+        <img src="img/pause.svg" id="pause_icon" alt="play/pause">
+      </div>
+      <div class="hero_banner">
+        <h3>studio yellow.</h3>
+        <div class="line"></div>
+        <h1>við hönnum <br>& forritum <br> vefsíðuna þína</h1>
+        <div class="button_box">
+          <a href="mailto:hello@studioyellow.is">
+            <div class="copy" onClick="copyFunction()">
+            <div class="contact_button"><span class="span_contact">sendu okkur línu</span>
+            </div>
+            <span class="copy_span" id="copy_span"></span>
+          </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu_buttons">
+        <button class="project_button" type="button" name="button"><a href="projects.html">verkefni</a></button>
+        <button class="us_button" type="button" name="button"><a href="about_us.html">studio yellow</a></button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

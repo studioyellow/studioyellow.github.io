@@ -1,0 +1,228 @@
+/*home page*/
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+}
+
+.overlay {
+  background-color: $pink;
+  opacity: 0.7;
+  z-index: 2;
+  min-width: 100%;
+  min-height: 120%;
+  // svo þetta sé á botninum á glugganum
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.content_cover {
+  position: absolute;
+  z-index: 9999;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.hero_banner{
+
+  h1, h3 {
+   font-weight: 900;
+   color: $yellow;
+   display: block;
+ }
+
+  h1{
+   font-size: 80px;
+   font-weight: 900;
+   margin-bottom: 60px;
+  }
+
+  h3{
+    font-size: 24px;
+  }
+}
+
+.line {
+  width: 50px;
+  height: 3px;
+  background-color: $yellow;
+}
+
+.contact_button, .project_button, .us_button {
+  width: 260px;
+  height: 75px;
+  background-color: $pink;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.span_contact {
+  color: rgb(255, 255, 255);
+  font-family: Roboto, sans-serif;
+  align-self: center;
+}
+
+
+.copy{
+  width: 290px;
+  height: 75px;
+  position: relative;
+  cursor: pointer;
+
+  a:hover{
+    text-decoration: none;
+  }
+}
+
+.copy:hover{
+
+  .copy_span{
+    display: none;
+  }
+
+  &:before{
+    content: "COPY";
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-weight: 900;
+    color: $yellow;
+  }
+}
+
+.button_box{
+  width: 340px;
+  height: 75px;
+
+  &:hover{
+    width: 340px;
+  }
+
+  .contact_button {
+    display: flex;
+    justify-content: center;
+
+    &:hover{
+      background-color: #f96767;
+
+      span {
+        display: none;
+      }
+
+      &:before{
+        content:"hello@studioyellow.is";
+        font-family: Roboto, sans-serif;
+        align-self: center;
+
+      }
+    }
+  }
+}
+
+.us_button {
+  background-color: $yellow;
+  margin-right: 9px;
+
+  &:hover{
+    background-color: #f9D100;
+  }
+
+  a{
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+.project_button {
+  margin-right: -4px;
+
+  &:hover{
+    background-color: #f96767;
+  }
+
+  a{
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.menu_buttons {
+  position: fixed;
+  bottom: 0;
+  right: -10px;
+}
+
+.hero_banner {
+  margin-top: 8%;
+  margin-left: 10%;
+}
+
+.playpause{
+  // background-image: url("img/playbutton.png");
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // height: 73px;
+  // width: 73px;
+  position: absolute;
+  z-index: 6;
+  top: 40%;
+  right: 25%;
+}
+
+.navigation_box{
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+
+  p{
+    color: $yellow;
+    font-size: 16px;
+    font-weight: 700;
+    align-self: center;
+    margin: 0;
+  }
+
+  a{
+    color: #fff;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 6px;
+
+    &:hover{
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+//bootstrap byrjar
+@media (max-width: 576px){
+  .project_button, .us_button{
+    display: none;
+  }
+}
